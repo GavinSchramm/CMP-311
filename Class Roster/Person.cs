@@ -41,7 +41,6 @@ namespace Class_Roster // Namespace to connect all the files together
         }
 
         // Method to overwrite the ToString method so it works with our class
-        //Don't know if I need this
         public override string ToString() 
         {
             return "Person: " + FirstName + " " + LastName;
