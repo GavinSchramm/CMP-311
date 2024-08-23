@@ -70,7 +70,7 @@ class Program
             else if (userInput == "2") // 2 prints our list of students
             {
                 Console.WriteLine(professor); // Prints instructor's information
-                foreach (var aStudent in orderList) // goes through the orderList by iteration
+                foreach (var aStudent in orderList) // goes through the orderList
                 {
                     Console.WriteLine(aStudent); // prints out the list 
                 }
@@ -82,31 +82,31 @@ class Program
                 // orderList list and orders it by each item in the list by lastName then puts it all back into a list
 
                 Console.WriteLine(professor); // Prints instructor's information
-                foreach (var aStudent in lastNameList) // goes through the lastNameList by iteration
+                foreach (var aStudent in lastNameList) // goes through the lastNameList
                 {
-                    Console.WriteLine(aStudent); // prints out the list 
+                    Console.WriteLine(aStudent); // prints out the student info
                 }
                 Console.WriteLine("End of list.\n"); // lets the user know the end of list
             }
-            else if (userInput == "4") // 2 prints our list of students by class rank
+            else if (userInput == "4") // 4 prints our list of students by class rank
             {
                 classRankList = orderList.OrderBy(o => o.ClassRank).ToList(); // updates classRankList by taking the
                 // orderList list and orders it by each item in the list by class rank then puts it all back into a list
 
                 Console.WriteLine(professor); // Prints instructor's information
-                foreach (var aStudent in classRankList) // goes through the classRankList by iteration
+                foreach (var aStudent in classRankList) // goes through the classRankList
                 {
-                    Console.WriteLine(aStudent); // prints out the list 
+                    Console.WriteLine(aStudent); // prints out the student info
                 }
                 Console.WriteLine("End of list.\n"); // lets the user know the end of list
             }
-            else if (userInput == "5") // 3 ends the app and sends a farewell to the user
+            else if (userInput == "5") // 5 ends the app and sends a farewell to the user
             {
                 endApp = true; // sets boolean to true and ends the while loop
                 Console.WriteLine("\nEnding App"); // tells the user the app is ending
                 Console.WriteLine("Have a nice day!"); // app sends their user their kind reguards
             }
-            else // Catches if input is not 1, 2, or 3
+            else // Catches if input is not 1, 2, 3, 4, or 5
             {
                 Console.WriteLine("\nUh oh, thats not an option silly"); // Lets the user know that is not an option
                 Console.WriteLine("Try again pookie\n"); // asks user to try again :)
