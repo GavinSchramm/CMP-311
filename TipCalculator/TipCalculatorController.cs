@@ -8,19 +8,17 @@ namespace MVCSample
 {
     class TipCalculatorController
     {
-        /// 
+        // The TipCalculatorController class brings together 
+        // the display and the tip or model classes
+        // I use the constructor to instantiate the Display.
+        // Instantiating the Display calls its constructor
+        // which calls the Get input method
+        // Once the input is entered I can instantiate
+        // the Tip class and pass the values from the 
+        // Display class. Notice the dot notation and observe
+        // how the two classes interact
 
-        /// The TipCalculatorController class brings together 
-        /// the display and the tip or model classes
-        /// I use the constructor to instantiate the Display.
-        /// Instantiating the Display calls its constructor
-        /// which calls the Get input method
-        /// Once the input is entered I can instantiate
-        /// the Tip class and pass the values from the 
-        /// Display class. Notice the dot notation and observe
-        /// how the two classes interact
-        /// 
-
+        // private fields
         private Tip tip;
         private Display display;
 

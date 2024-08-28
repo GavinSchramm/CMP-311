@@ -8,19 +8,16 @@ namespace MVCSample
 {
     class Tip
     {
-        /// 
+        // This class does a very simple tip 
+        // calculation. It has two fields amount and
+        // tip percent. We are ignoring tax and whether
+        // we tip before or after tax. The point is the
+        // MVC model. This is the model part of MVC.
+        // It does the calculations and handles the data
+        // it is totally unaware of the Display class
+        // or the controller
+        
 
-        /// This class does a very simple tip 
-        /// calculation. It has two fields amount and
-        /// tip percent. We are ignoring tax and whether
-        /// we tip before or after tax. The point is the
-        /// MVC model. This is the model part of MVC.
-        /// It does the calculations and handles the data
-        /// it is totally unaware of the Display class
-        /// or the controller
-        /// 
-
-        /// 
         //private fields
         private double amount;
         private double tipPercent;

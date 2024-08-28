@@ -8,19 +8,16 @@ namespace MVCSample
 {
     class Display
     {
-        /// 
+        // this is the Display class. Its purpose is
+        // to gather the input and display the output
+        // Unlike our usual display I have made the 
+        // variables Class level fields. This is so
+        // the Controller can have access to the fields
+        // through the properties. The Display class
+        // is totally unaware of the Tip class (the model)
+        // or the controller
+        
 
-        /// this is the Display class. Its purpose is
-        /// to gather the input and display the output
-        /// Unlike our usual display I have made the 
-        /// variables Class level fields. This is so
-        /// the Controller can have access to the fields
-        /// through the properties. The Display class
-        /// is totally unaware of the Tip class (the model)
-        /// or the controller
-        /// 
-
-        /// 
         //private fields
         private double perc;
         private double amt;
