@@ -32,25 +32,27 @@ namespace Refactor_Caculator
             get { return ans; }
             set { ans = value; }
         }
-        public double DoOperation(double num1, double num2, string op)
+
+        // functions
+        public double DoOperation(double num1, double num2, string op) // function to do operation
         {
             double result = double.NaN; // Default value is "not-a-number" if an operation, such as division, could result in an error.
 
             // Use a switch statement to do the math.
             switch (op)
             {
-                case "a":
+                case "a": // addition
                     result = num1 + num2;
                     break;
-                case "s":
+                case "s": // substraction
                     result = num1 - num2;
                     break;
-                case "m":
+                case "m": // multiplication
                     result = num1 * num2;
                     break;
-                case "d":
+                case "d": // division
                     // Ask the user to enter a non-zero divisor.
-                    if (num2 != 0)
+                    if (num2 != 0) // if second number is not 0, do caculation
                     {
                         result = num1 / num2;
                     }
@@ -59,11 +61,23 @@ namespace Refactor_Caculator
                 default:
                     break;
             }
-            return result;
+            return result; // returns the result
         }
-        public override string ToString()
+        public override string ToString() // takes the feilds and lets us print it out
         {
             return this.ToString();
+        }
+
+        public bool endApp(string myString) // used to see if we want to flip true or false
+        {
+            if (myString == "n") // if input is string "n"
+            {
+                return true; // return true
+            }
+            else
+            {
+                return false; // if literally anything else, return false
+            }
         }
     }
 }
