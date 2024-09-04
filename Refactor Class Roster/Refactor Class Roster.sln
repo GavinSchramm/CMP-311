@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refactor Class Roster", "Refactor Class Roster.csproj", "{B321F4D3-B10C-4763-96CE-B504F515CF5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B321F4D3-B10C-4763-96CE-B504F515CF5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B321F4D3-B10C-4763-96CE-B504F515CF5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B321F4D3-B10C-4763-96CE-B504F515CF5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B321F4D3-B10C-4763-96CE-B504F515CF5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91D364F8-F73B-4BF9-AFAA-7DA911EDF204}
+	EndGlobalSection
+EndGlobal
