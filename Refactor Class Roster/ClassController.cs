@@ -70,17 +70,26 @@ namespace Refactor_Class_Roster
                 else if (userInput == "2")
                 {
                     classView.PrintString(classModel.ReturnInstructor());
-                    classView.PrintList(classModel.SortList("Order",classModel.ReturnList())); // prints list by order
+                    foreach (var aStudent in classModel.SortList("Order", classModel.ReturnList())) // for each student in our list parameter
+                    {
+                        classView.PrintString(aStudent.ToString()); // write out the student
+                    }
                 }
                 else if (userInput == "3")
                 {
                     classView.PrintString(classModel.ReturnInstructor());
-                    classView.PrintList(classModel.SortList("Last", classModel.ReturnList())); // prints list by last name
+                    foreach (var aStudent in classModel.SortList("Last", classModel.ReturnList())) // for each student in our list parameter
+                    {
+                        classView.PrintString(aStudent.ToString()); // write out the student
+                    }
                 }
                 else if (userInput == "4")
                 {
                     classView.PrintString(classModel.ReturnInstructor());
-                    classView.PrintList(classModel.SortList("Rank", classModel.ReturnList())); // prints list by class rank
+                    foreach (var aStudent in classModel.SortList("Rank", classModel.ReturnList())) // for each student in our list parameter
+                    {
+                        classView.PrintString(aStudent.ToString()); // write out the student
+                    }
                 }
                 else if (userInput == "5")
                 {

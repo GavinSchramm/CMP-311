@@ -18,13 +18,5 @@ namespace Refactor_Class_Roster
         {
             return (Console.ReadLine());
         }
-
-        public void PrintList(List<Student> list) // used to print our list out
-        {
-            foreach (var aStudent in list) // for each student in our list parameter
-            {
-                Console.WriteLine(aStudent); // write out the student
-            }
-        }
     }
 }
