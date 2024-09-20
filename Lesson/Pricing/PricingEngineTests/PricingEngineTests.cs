@@ -14,7 +14,7 @@ namespace PricingEngineTests
             // act
             decimal unitPrice = engine.CalculateUnitPrice(10, 0.50m);
             // assert
-            Assert.AreEqual(unitPrice, 0.50m);
+            Assert.AreEqual(unitPrice, 0.500m);
 
         }
 
@@ -85,7 +85,7 @@ namespace PricingEngineTests
             decimal unitPrice = engine.CalculateUnitPrice(10, 0.50m);
 
             // assert
-            Assert.AreEqual(unitPrice, 0.50m);
+            Assert.AreEqual(unitPrice, 0.500m);
         }
 
         [TestMethod]
