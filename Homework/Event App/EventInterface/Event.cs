@@ -110,8 +110,20 @@ namespace EventInterface
                 eventInfo.Cost = eventInfo.Cost * 1.1;
                 Console.WriteLine("Late price is: $" + eventInfo.Cost);
                 return eventInfo.Cost;
-            } 
-            else 
+            }
+            else if (letter == "E" || letter == "e")
+            {
+                eventInfo.Cost = eventInfo.Cost * .75;
+                Console.WriteLine("Late price is: $" + eventInfo.Cost);
+                return eventInfo.Cost;
+            }
+            else if (letter == "F" || letter == "f")
+            {
+                eventInfo.Cost = eventInfo.Cost * 0;
+                Console.WriteLine("Late price is: $" + eventInfo.Cost);
+                return eventInfo.Cost;
+            }
+            else
             {
                 Console.WriteLine("No price change. Your price is: $" + eventInfo.Cost);
                 return eventInfo.Cost;

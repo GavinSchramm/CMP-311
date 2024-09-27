@@ -12,6 +12,7 @@ public class Program
     {
         Event filler = new Event(); //should print id = -1, "No description", 0
         Event test = new Event(1, "Just a test", 5);
+        CostEngine costEngine = new CostEngine();
         IWedding wedding = new Event(2, "Wedding", 10000);
         IBirthday birthday = new Event(3,"Birthday",10);
         IOther suprise = new Event(4, "Suprise", 19);
@@ -33,6 +34,14 @@ public class Program
         suprise.PriceChange("l");
         suprise.PriceChange("D");
         suprise.PriceChange("Hello");
+
+        Console.WriteLine("\nEnd of PriceChange()\n");
+
+        costEngine.PriceChange("d", 10);
+        costEngine.PriceChange("L", 10);
+        costEngine.PriceChange("f", 10);
+        costEngine.PriceChange("E", 10);
+        costEngine.PriceChange("Hello", 10);
         //test above:program below
     }
 }
